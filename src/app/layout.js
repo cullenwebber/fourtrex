@@ -1,6 +1,6 @@
-import Header from "./ui/header/Header";
-import Footer from "./ui/footer/Footer";
-import { neueMontreal } from "./ui/fonts";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import { neueMontreal } from "@/components/fonts";
 import "./globals.css";
 
 export const metadata = {

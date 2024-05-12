@@ -1,13 +1,15 @@
-import Image from "next/image";
+import About from "./components/About";
+import Hero from "./components/Hero";
+import Services from "./components/Services";
 import styles from "./page.module.css";
-
-import { yapari } from "./ui/fonts";
-
+import { yapari } from "@/components/fonts";
 
 export default function Home() {
   return (
     <main>
-      <h1>Home</h1>
+      <Hero />
+      <About />
+      <Services />
     </main>
   );
 }
