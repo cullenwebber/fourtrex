@@ -1,3 +1,143 @@
-.footer{
-    
+.footer {
+    background-color: var(--secondary-accent-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footerSection {
+    padding: var(--side-padding);
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    background-image: url('../../../public/images/footer.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footerSectionGradient {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: -moz-linear-gradient(180deg, var(--background-color) 0%, rgba(23, 25, 30, 0.4) 50%, var(--background-color) 100%);
+    background: -webkit-linear-gradient(180deg, var(--background-color) 0%, rgba(23, 25, 30, 0.4) 50%, var(--background-color) 100%);
+    background: linear-gradient(180deg, var(--background-color) 0%, rgba(23, 25, 30, 0.4) 50%, var(--background-color) 100%);
+}
+
+.accent {
+    color: var(--accent-color);
+}
+
+.text {
+    text-align: end;
+    position: relative;
+    z-index: 1;
+}
+
+.logoText {
+    padding: 8rem var(--side-padding) 6rem;
+    overflow: hidden;
+}
+
+.footerCarousel {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 4rem;
+    overflow: hidden;
+}
+
+.footerImageContainer {
+    width: 25vw;
+    height: 25vw;
+    flex-shrink: 0;
+    position: relative;
+    margin-right: 1rem;
+    border-radius: 1rem;
+}
+
+.innerFooter{
+    background-color: var(--background-color);
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+.imageOverlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--secondary-accent-color);
+    z-index: 1;
+    opacity: 0.15;
+}
+
+.contactFooter {
+    padding: 8rem var(--side-padding) 4rem;
+    background-color: var(--secondary-accent-color);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+}
+
+.contactInner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+
+.buttonGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: flex-end;
+}
+
+.button {
+    font-size: 1.5rem;
+}
+
+.menuScroll {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 8rem;
+}
+
+@media (max-width:576px) {
+    .logoText {
+        padding: 2rem var(--side-padding) 2rem;
+        overflow: hidden;
+    }
+
+    .contactInner {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .buttonGroup {
+        align-items: flex-start;
+    }
+
+    .button {
+        font-size: 1.25rem;
+    }
+
+    .contactFooter {
+        padding: 6rem var(--side-padding) 4rem;
+    }
+
+    .menuScroll{
+        padding-top: 6rem;
+    }
+
 }

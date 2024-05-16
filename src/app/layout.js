@@ -1,6 +1,7 @@
+import { ReactLenis } from 'lenis/react'
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { neueMontreal } from "@/components/fonts";
+import Wrapper from '@/components/Wrapper';
 import "./globals.css";
 
 export const metadata = {
@@ -8,14 +9,15 @@ export const metadata = {
   description: "Experienced Workforce Skilled in Mining & Civil Piping Systems",
 };
 
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={neueMontreal.className}>
-        <Header />
-        {children}
-        <Footer />
-      </body>
+      <Wrapper>
+          <Header />
+          {children}
+          <Footer />
+      </Wrapper>
     </html>
   );
 }

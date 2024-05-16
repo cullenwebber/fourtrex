@@ -1,6 +1,9 @@
 :root {
   --max-width: 1600px;
+  --side-padding: 4rem;
   --foreground-color: #fff;
+  --accent-color: #7CA6F8;
+  --secondary-accent-color: #0021F3;
   --background-color: #17191E;
 }
 
@@ -8,12 +11,13 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  line-height: 1.6em;
 }
 
 html,
 body {
   max-width: 100vw;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 body {
@@ -21,12 +25,177 @@ body {
   background-color: var(--background-color);
 }
 
+h1,
+h2,
+h5 {
+  font-size: 3.5rem;
+  line-height: 1.3em;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 2.5rem;
+  line-height: 1.3em;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: 1.5rem;
+  line-height: 1.3em;
+  text-transform: uppercase;
+}
+
+h1 div {
+  line-height: 1.3em;
+}
+
 a {
   color: inherit;
   text-decoration: none;
 }
 
-.section-padding{
+.section-padding {
   padding-left: 4rem;
   padding-right: 4rem;
+}
+
+.btn {
+  position: relative;
+}
+
+.btn::after {
+  content: '';
+  display: flex;
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+  height: 1px;
+  background-color: var(--foreground-color);
+  width: 0;
+  transition: all 300ms ease;
+}
+
+.btn:hover::after {
+  width: 100%;
+}
+
+.logoSvg {
+  width: 100%;
+  height: 100%;
+}
+
+/* lenis css */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+/* scroll bar css */
+
+/* For Webkit browsers like Chrome, Safari, and newer versions of Edge */
+::-webkit-scrollbar {
+  width: 12px;
+  /* scrollbar width */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  /* scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent-color);
+  /* scrollbar thumb */
+  border-radius: 6px;
+  /* roundness of the scrollbar thumb */
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent-color) transparent;
+  /* thumb and track color */
+}
+
+/* Optional: for IE and Edge legacy */
+* {
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.logoLettersOuter {
+  overflow: hidden;
+}
+
+
+@media (max-width: 1200px) {
+
+  h1,
+  h2,
+  h5 {
+    font-size: 2.5rem;
+    line-height: 1.3em;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    font-size: 2rem;
+    line-height: 1.3em;
+    text-transform: uppercase;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+    line-height: 1.3em;
+    text-transform: uppercase;
+  }
+
+
+}
+
+@media (max-width:992px) {
+  * {
+    --side-padding: 2rem;
+  }
+}
+
+@media (max-width:576px) {
+  * {
+    --side-padding: 1rem;
+  }
+
+  h1,
+  h2,
+  h5 {
+    font-size: 1.75rem;
+    line-height: 1.3em;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    font-size: 2rem;
+    line-height: 1.3em;
+    text-transform: uppercase;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+    line-height: 1.3em;
+    text-transform: uppercase;
+  }
 }

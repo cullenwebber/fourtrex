@@ -1,9 +1,30 @@
-
-
 .header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 4rem;
+    padding: 2rem var(--side-padding);
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    gap: 2rem;
+}
+
+.menuContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    align-items: center;
+}
+
+.logo {
+    width: 170px;
+    height: auto;
+}
+
+
+@media (max-width: 767px) {
+    .menuContainer {
+        display: none;
+    }
 }
