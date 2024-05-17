@@ -179,7 +179,11 @@ export default function Footer() {
 					</svg>
 				</section>
 			</div>
-			<section className={styles.contactFooter} ref={contactFooter} id="contact">
+			<section
+				className={styles.contactFooter}
+				ref={contactFooter}
+				id="contact"
+			>
 				<h5 style={yapari.style} ref={contactHeader}>
 					get in contact
 				</h5>

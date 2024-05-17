@@ -126,32 +126,34 @@ export default function Services() {
 					})}
 				</div>
 				<Service
-					title="pipeline construction"
-					para="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+					title="Pipelines & Construction"
+					para="
+					We handle all aspects of pipeline design, management, supply, and installation.
+				 Whether you need potable, raw, recycled or bulk water transfer, we can design a custom solution to meet your needs."
 					className="service"
 					onMouseEnter={() => {
 						setHoverImage(0);
 					}}
 				/>
 				<Service
-					title="mine water management"
-					para="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+					title="Borefields"
+					para="Supply and installation of pipelines, bore pumps, headworks, starter panels, generators, and remote fuel cells."
 					className="service"
 					onMouseEnter={() => {
 						setHoverImage(1);
 					}}
 				/>
 				<Service
-					title="dewatering"
-					para="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+					title="water solutions"
+					para="Expert dewatering services, designing and installing tailored systems to balance capital expenditure and ongoing costs. Our solutions include pontoon, skid-mounted, and trailer pumping systems, ensuring efficient and effective water management."
 					className="service"
 					onMouseEnter={() => {
 						setHoverImage(2);
 					}}
 				/>
 				<Service
-					title="borefields"
-					para="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+					title="Civil & Earthworks"
+					para="Small earthworks for mining, including trenching, road crossings, corridors, and culverts. Our services ensure efficient site preparation and infrastructure development to support your mining operations."
 					className="service"
 					onMouseEnter={() => {
 						setHoverImage(3);
