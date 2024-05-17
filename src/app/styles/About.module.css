@@ -16,26 +16,6 @@
     text-align: end;
 }
 
-.aboutImage {
-    width: 100vw;
-    height: 100vh;
-    background-image: url('../../../public/images/about.jpeg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-}
-
-.aboutImageOverlay {
-    width: 100%;
-    height: 100%;
-    background-color: #0020f316;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
 .imageWrapper {
     height: 80%;
     overflow: hidden;
@@ -47,21 +27,16 @@
     border-radius: 2rem;
 }
 
-.imageContainer {
-    min-height: 100vh;
+.panelContainer {
     width: 100%;
+    height: 100lvh;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    margin-bottom: 4rem;
+    position: relative;
 }
 
-.panelContainer {
-    width: 200%;
-    height: 100vh;
-    display: flex;
-    flex-wrap: nowrap;
-    margin-bottom: 4rem;
+.panel:first-of-type{
+    z-index: 2;
 }
 
 .panel {
@@ -76,7 +51,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding: var(--side-padding);
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .h5 {

@@ -34,34 +34,31 @@ export default function About() {
 
 		let sections = gsap.utils.toArray(".panel");
 
-		const horizontalScroll = gsap
-			.timeline({
-				scrollTrigger: {
-					trigger: container.current,
-					pin: true,
-					scrub: true,
-					end: "150%"
-				},
-			})
-			.to(sections, {
-				delay: 0.25,
-				xPercent: -100 * (sections.length - 1),
-				ease: "none",
-			});
+		const aboutTl = gsap.timeline({
+			scrollTrigger: {
+				trigger: container.current,
+				pin: true,
+				scrub: true,
+				end: "150%",
+			},
+		});
 
-		sections.forEach((section, index) => {
-			gsap.from(section.querySelectorAll("h5, p"), {
+		aboutTl
+			.to(".panel1 h5, .panel1 p", {
+				delay: 0.5,
 				opacity: 0,
 				y: "2rem",
 				stagger: 0.25,
-				ease: "power2.out",
-				scrollTrigger: {
-					trigger: section,
-					start: index === 0 ? "center center" : "left center",
-					containerAnimation: horizontalScroll,
-				},
-			});
-		});
+			})
+			.to(".panel1", {
+				opacity: 0,
+			})
+			.from(".panel2 h5, .panel2 p", {
+				opacity: 0,
+				stagger: 0.25,
+				y: "2rem",
+			})
+			.from(".panel2", { opacity: 1, duration: 0.5 });
 	});
 	return (
 		<>
@@ -80,7 +77,7 @@ export default function About() {
 				</div>
 			</section>
 			<section className={styles.panelContainer} ref={container}>
-				<div className={styles.panel + " panel"}>
+				<div className={styles.panel + " panel panel1"}>
 					<Image
 						src="/images/civil.jpeg"
 						alt="Civil Sector"
@@ -101,7 +98,7 @@ export default function About() {
 						Civil Sector
 					</h5>
 				</div>
-				<div className={styles.panel + " panel"}>
+				<div className={styles.panel + " panel panel2"}>
 					<Image
 						src="/images/about.jpeg"
 						alt="Mining Sector"

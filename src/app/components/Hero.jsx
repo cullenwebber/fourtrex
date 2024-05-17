@@ -19,6 +19,13 @@ export default function Hero() {
 	useGSAP(() => {
 		gsap.registerPlugin(ScrollTrigger);
 
+		let loadTl = gsap.timeline({
+			defaults: {
+				duration: 0.5,
+				ease: "power2.out",
+			},
+		});
+
 		let scrollTl = gsap.timeline({
 			scrollTrigger: {
 				trigger: hero.current,
@@ -101,8 +108,8 @@ export default function Hero() {
 		});
 		scrollTl2
 			.to(heroImageInner.current, {
-				width: "150vw",
-				height: "150vh",
+				width: "150lvw",
+				height: "150lvh",
 				ease: "none",
 			})
 			.to(
@@ -123,7 +130,7 @@ export default function Hero() {
 					<div className={styles.heroGradient}></div>
 				</div>
 			</div>
-			<section className={styles.hero} ref={hero}>
+			<section className={styles.hero + " hero"} ref={hero}>
 				<div className={styles.heroContainer}>
 					<h1 style={yapari.style}>
 						<div className={styles.accent} ref={textTop}>

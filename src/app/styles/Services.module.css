@@ -39,6 +39,13 @@
     overflow: hidden;
 }
 
+@media (max-width:768px) {
+    .hoverImage {
+        display: none;
+    }
+
+}
+
 @media (max-width:576px) {
 
     .services {
