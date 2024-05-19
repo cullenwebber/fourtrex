@@ -154,7 +154,7 @@ export default function Services() {
 				/>
 				<Service
 					title="Earthworks"
-					para="We specialize in minor earthworks for mining, including trenching, road crossings, corridors, and culverts. Our services ensure efficient site preparation and infrastructure development to support your mining operations."
+					para="We specialise in minor earthworks for mining, including trenching, road crossings, corridors, and culverts. Our services ensure efficient site preparation and infrastructure development to support your mining operations."
 					className="service"
 					onMouseEnter={() => {
 						setHoverImage(3);
