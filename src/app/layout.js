@@ -1,4 +1,3 @@
-import { ReactLenis } from 'lenis/react'
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Wrapper from '@/components/Wrapper';

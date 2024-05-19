@@ -136,7 +136,7 @@ export default function Hero() {
 						<div className={styles.accent} ref={textTop}>
 							Engineering
 						</div>
-						<div ref={textCenter}>Tailored HDPE</div>
+						<div ref={textCenter}>Tailored piping</div>
 						<div ref={textBottom}>Solutions</div>
 					</h1>
 					<div className={styles.buttonGroup}>

@@ -72,7 +72,7 @@ export default function About() {
 					</h3>
 					<p className={styles.paragraph} ref={para}>
 						Fourtrex Engineering Pty Ltd is a Piping and Civil Engineering
-						contracting company which specialise in an extensive range of HDPE
+						contracting company which specialise in an extensive range of piping
 						systems. Located in Perth, Western Australia, we
 						are situated to provide a responsive and trouble-free service,
 						ensuring client downtime is kept to a minimum.
@@ -118,7 +118,7 @@ export default function About() {
 						valves, and other coupled materials. Our offerings include mine water
 						management, dewatering services, tailings storage facility lifts,
 						and pipeline installations. We provide skilled task forces and
-						equipment hire, along with earthworks and fire services.
+						equipment hire, along with minor earthworks and fire services.
 					</p>
 					<h5 style={yapari.style} className={styles.h5}>
 						Mining Sector

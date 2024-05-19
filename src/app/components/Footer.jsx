@@ -21,6 +21,7 @@ export default function Footer() {
 	const contactHeader = useRef(null);
 	const contactPara = useRef(null);
 	const footerMenu = useRef(null);
+	
 
 	useGSAP(() => {
 		let scrollTl = gsap.timeline({
@@ -190,7 +191,7 @@ export default function Footer() {
 				<div className={styles.contactInner}>
 					<p ref={contactPara}>
 						Fourtrex Engineering Pty Ltd endeavours to deliver a safe, reliable,
-						and efficient workforce, striving to establish a fruitful
+						and efficient workforce, striving to establish a mutually beneficial
 						relationship with our clientele.
 					</p>
 					<div className={styles.buttonGroup}>

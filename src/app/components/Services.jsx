@@ -137,7 +137,8 @@ export default function Services() {
 				/>
 				<Service
 					title="Borefields"
-					para="Supply and installation of pipelines, bore pumps, headworks, starter panels, generators, and remote fuel cells."
+					para="
+					We provide comprehensive services for the supply and installation of pipelines, bore pumps, headworks, starter panels, generators, and remote fuel cells."
 					className="service"
 					onMouseEnter={() => {
 						setHoverImage(1);
@@ -145,15 +146,15 @@ export default function Services() {
 				/>
 				<Service
 					title="water solutions"
-					para="Expert dewatering services, designing and installing tailored systems to balance capital expenditure and ongoing costs. Our solutions include pontoon, skid-mounted, and trailer pumping systems, ensuring efficient and effective water management."
+					para="We offer expert dewatering services, designing and installing tailored systems to balance capital expenditure and ongoing costs. Our solutions include pontoon, skid-mounted, and trailer pumping systems, ensuring efficient and effective water management."
 					className="service"
 					onMouseEnter={() => {
 						setHoverImage(2);
 					}}
 				/>
 				<Service
-					title="Civil & Earthworks"
-					para="Small earthworks for mining, including trenching, road crossings, corridors, and culverts. Our services ensure efficient site preparation and infrastructure development to support your mining operations."
+					title="Earthworks"
+					para="We specialize in minor earthworks for mining, including trenching, road crossings, corridors, and culverts. Our services ensure efficient site preparation and infrastructure development to support your mining operations."
 					className="service"
 					onMouseEnter={() => {
 						setHoverImage(3);
