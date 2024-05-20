@@ -73,14 +73,37 @@ export default function About() {
 					<p className={styles.paragraph} ref={para}>
 						Fourtrex Engineering Pty Ltd is a Piping and Civil Engineering
 						contracting company which specialise in an extensive range of piping
-						systems. Located in Perth, Western Australia, we
-						are situated to provide a responsive and trouble-free service,
-						ensuring client downtime is kept to a minimum.
+						systems. Located in Perth, Western Australia, we are situated to
+						provide a responsive and trouble-free service, ensuring client
+						downtime is kept to a minimum.
 					</p>
 				</div>
 			</section>
 			<section className={styles.panelContainer} ref={container}>
 				<div className={styles.panel + " panel panel1"}>
+					<Image
+						src="/images/about.jpeg"
+						alt="Mining Sector"
+						width={0}
+						height={0}
+						sizes="100vw"
+						className={styles.image}
+					/>
+					<div className={styles.gradient}></div>
+					<p className={styles.p}>
+						Fourtrex Engineering provides comprehensive mining services
+						including HDPE piping systems up to 1200mm, fabrication,
+						modifications, and repairs. We supply HDPE fittings, valves, and
+						other coupled materials. Our offerings include mine water
+						management, dewatering services, tailings storage facility lifts,
+						and pipeline installations. We provide skilled task forces and
+						equipment hire, along with minor earthworks and fire services.
+					</p>
+					<h5 style={yapari.style} className={styles.h5}>
+						Mining Sector
+					</h5>
+				</div>
+				<div className={styles.panel + " panel panel2"}>
 					<Image
 						src="/images/civil.jpeg"
 						alt="Civil Sector"
@@ -99,29 +122,6 @@ export default function About() {
 					</p>
 					<h5 style={yapari.style} className={styles.h5}>
 						Civil Sector
-					</h5>
-				</div>
-				<div className={styles.panel + " panel panel2"}>
-					<Image
-						src="/images/about.jpeg"
-						alt="Mining Sector"
-						width={0}
-						height={0}
-						sizes="100vw"
-						className={styles.image}
-					/>
-					<div className={styles.gradient}></div>
-					<p className={styles.p}>
-						Fourtrex Engineering provides comprehensive mining services
-						including HDPE piping systems up to 1200mm, fabrication,
-						modifications, and repairs. We supply HDPE fittings,
-						valves, and other coupled materials. Our offerings include mine water
-						management, dewatering services, tailings storage facility lifts,
-						and pipeline installations. We provide skilled task forces and
-						equipment hire, along with minor earthworks and fire services.
-					</p>
-					<h5 style={yapari.style} className={styles.h5}>
-						Mining Sector
 					</h5>
 				</div>
 			</section>
