@@ -126,7 +126,7 @@ export default function Services() {
 					})}
 				</div>
 				<Service
-					title="Pipelines & Construction"
+					title="Pipeline construction"
 					para="
 					We handle all aspects of pipeline design, management, supply, and installation.
 				 Whether you need potable, raw, recycled or bulk water transfer, we can design a custom solution to meet your needs."
